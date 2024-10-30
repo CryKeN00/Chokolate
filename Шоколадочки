@@ -1,0 +1,14 @@
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Введите колличество деняк в кошельке:");
+        int money = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Введите цену шакаладки:");
+        int price = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Введите цену за бесценную оберточку:");
+        int wrap = Convert.ToInt32(Console.ReadLine());
+        int chokolat = money / price + money / wrap;
+        Console.WriteLine($"Максимальное количество шоколада, который ты съешь на эти money: {chokolat}");
+    }
+    }
+}
+
